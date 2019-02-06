@@ -7,6 +7,6 @@ applications:
   - route: allocations-pal-pxp1795.apps.evans.pal.pivotal.io
   path: Applications/AllocationsServer/bin/Release/netcoreapp2.1/publish
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN/
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-pxp1795.apps.evans.pal.pivotal.io/
   services:
   - tracker-allocations-database
