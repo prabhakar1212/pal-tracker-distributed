@@ -166,7 +166,7 @@ namespace IntegrationTest
 
         private static void AssertGreaterThan(long actual, long bound)
         {
-            Assert.InRange(actual, bound  1, long.MaxValue);
+            Assert.InRange(actual, bound + 1, long.MaxValue);
         }
     }
 
