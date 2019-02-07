@@ -48,7 +48,7 @@ namespace TimesheetsServer
 
             services.AddDbContext<TimeEntryContext>(options => options.UseMySql(Configuration));
             services.AddScoped<ITimeEntryDataGateway, TimeEntryDataGateway>();
-            
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IProjectClient>(sp =>
             {
             var handler = new DiscoveryHttpClientHandler(sp.GetService<IDiscoveryClient>());
